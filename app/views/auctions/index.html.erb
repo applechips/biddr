@@ -1,0 +1,5 @@
+<h1>Biddr</h1>
+<% @auctions.each do |auction| %>
+  <%= link_to "#{auction.title}", auction_path(auction) %>
+  <hr>
+<% end %>
